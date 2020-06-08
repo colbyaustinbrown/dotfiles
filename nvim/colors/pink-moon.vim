@@ -1,0 +1,1 @@
+../themes/vim-pink-moon/colors/pink-moon.vim

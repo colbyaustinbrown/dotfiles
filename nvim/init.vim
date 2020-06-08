@@ -25,3 +25,8 @@ noremap <silent <expr> k (v:count == 0 ? 'gk' : 'k')
 
 nnoremap <esc> :noh<return><esc>
 
+" Add some colors
+set termguicolors
+set background=dark
+colorscheme pink-moon
+
