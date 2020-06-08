@@ -188,3 +188,5 @@ gaps inner 20
 gaps outer 10
 smart_gaps on
 
+exec feh --bg-scale ~/dotfiles/wallpaper.jpg
+

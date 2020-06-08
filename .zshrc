@@ -45,8 +45,5 @@ else
 	# fzf
 	source /usr/share/fzf/key-bindings.zsh
 	source /usr/share/fzf/completion.zsh
-
-	# Set wallpaper
-	feh --bg-scale "${HOME}/dotfiles/wallpaper.jpg"
 fi
 
