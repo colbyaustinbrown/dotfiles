@@ -29,6 +29,7 @@ else
 
 	#### Oh My Zsh ###
 	export ZSH="${dotfiles_root}/zsh/oh-my-zsh"
+	export ZSH_CUSTOM="${dotfiles_root}/zsh/custom"
 
 	ZSH_THEME="powerlevel10k/powerlevel10k"
 

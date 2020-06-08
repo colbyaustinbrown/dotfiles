@@ -4,8 +4,8 @@
 [submodule "dotfiles/zsh/oh-my-zsh"]
 	path = dotfiles/zsh/oh-my-zsh
 	url = https://github.com/ohmyzsh/ohmyzsh
-[submodule "dotfiles/zsh/powerlevel10k"]
-	path = dotfiles/zsh/powerlevel10k
+[submodule "dotfiles/zsh/custom/powerlevel10k"]
+	path = dotfiles/zsh/custom/powerlevel10k
 	url = https://github.com/romkatv/powerlevel10k
 [submodule "dotfiles/tmux/oh-my-tmux"]
 	path = dotfiles/tmux/oh-my-tmux
