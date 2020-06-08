@@ -19,7 +19,7 @@ else
 
 	unsetopt autocd
 
-	source "${dotfiles_root}/zsh/.aliases"
+	source "${HOME}/.aliases"
 
 	# Set default editor
 	export VISUAL=nvim
@@ -37,7 +37,7 @@ else
 	source "${ZSH}/oh-my-zsh.sh"
 
 	# To customize prompt, run `p10k configure` or edit ~/dotfiles/zsh/.p10k.zsh.
-	[[ ! -f ~/dotfiles/zsh/.p10k.zsh ]] || source ~/dotfiles/zsh/.p10k.zsh
+	[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 	# Use vi mode
 	bindkey -v
