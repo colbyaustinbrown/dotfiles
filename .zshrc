@@ -46,5 +46,9 @@ else
 	# fzf
 	source /usr/share/fzf/key-bindings.zsh
 	source /usr/share/fzf/completion.zsh
+
+	# gpg
+	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
+	gpgconf --launch gpg-agent
 fi
 
