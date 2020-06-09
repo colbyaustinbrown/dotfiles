@@ -10,3 +10,6 @@
 [submodule "dotfiles/tmux/oh-my-tmux"]
 	path = dotfiles/tmux/oh-my-tmux
 	url = https://github.com/gpakosz/.tmux
+[submodule "dotfiles/rofi"]
+	path = dotfiles/rofi
+	url = git@github.com:colbyaustinbrown/rofi
