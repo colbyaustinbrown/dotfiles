@@ -29,7 +29,7 @@ background = #00000000
 font-0 = "JetBrains Mono NL"
 font-1 = "Symbols Nerd Font"
 
-modules-right = backlight battery date
+modules-right = pulseaudio backlight battery date
 
 
 ; MODULES
@@ -64,6 +64,23 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+sink = alsa_output.pci-0000_09_00.4.analog-stereo
+use-ui-max = true
+interval = 10
+
+label-muted = ﱝ ----muted----
+format-muted-padding = 3
+format-volume-padding = 3
+format-volume =  <bar-volume> <label-volume>
+bar-volume-width = 10
+bar-volume-indicator =
+bar-volume-fill = ━
+bar-volume-empty = ━
+bar-volume-fill-foreground = ${colors.yellow}
+bar-volume-empty-foreground = ${colors.gray}
 
 [module/backlight]
 type = internal/backlight
