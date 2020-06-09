@@ -2,4 +2,4 @@ alias vim='nvim'
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 alias shutdown='sudo shutdown'
 alias reboot='sudo reboot'
-
+alias cat-hist="cat ~/.zsh-hist-eternal | sed 's/: [0-9:]\+;//'"
