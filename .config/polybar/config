@@ -1,10 +1,36 @@
+[colors]
+; pink-moon
+background = #333c47
+foreground = #eee
+blue = #9dd6f4
+yellow = #edd98f
+gray = #6e7b87
+;color0			#252932
+;color1			#9dd6f4
+;color2			#6E7B87
+;color3			#5F7C99
+;color4			#edd98f
+;color5			#f8f8f2
+;color6			#9dd6f4
+;color7			#f8f8f2
+;color8			#edd98f
+;color9			#608DAB
+;color10		#f8f8f2
+;color11		#9dd6f4
+;color12		#608DAB
+;color13		#5673BE 
+;color14		#5673BE
+;color15		#5673BE
+
 [bar/top]
 width = 100%
 height = 35
+background = #00000000
 font-0 = "JetBrains Mono NL"
 font-1 = "Symbols Nerd Font"
 
-modules-right = battery date
+modules-right = backlight battery date
+
 
 ; MODULES
 
@@ -38,4 +64,16 @@ ramp-capacity-1 = 
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
+
+[module/backlight]
+type = internal/backlight
+card = nv_backlight
+
+format = 盛 <bar>
+bar-width = 10
+bar-indicator =
+bar-fill = ━
+bar-empty = ━
+bar-fill-foreground = ${colors.yellow}
+bar-empty-foreground = ${colors.gray}
 
