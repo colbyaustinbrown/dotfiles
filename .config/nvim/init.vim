@@ -30,3 +30,8 @@ set termguicolors
 set background=dark
 colorscheme pink-moon
 
+" Plugins
+call plug#begin('~/.config/nvim/plugs')
+Plug 'neomake/neomake'
+call plug#end()
+

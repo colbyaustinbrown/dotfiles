@@ -13,3 +13,4 @@
 [submodule ".config/rofi"]
 	path = .config/rofi
 	url = git@github.com:colbyaustinbrown/rofi
+
