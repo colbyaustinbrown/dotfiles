@@ -32,7 +32,7 @@ colorscheme pink-moon
 
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
-Plug 'neomake/neomake'
+Plug 'colbyaustinbrown/neomake'
 call plug#end()
 
 " Latex configuration
@@ -49,6 +49,16 @@ let g:neomake_tex_pdflatex_maker = {
 	\ 'errorformat': '%E%f:%l: %m'
 	\}
 
+function! PdfLatexExe(options) dict
+	let maker = deepcopy(self)
+	let event = get (a:options, 'event', 'manual')
+	echo event
+	if !(event ==# 'manual')
+		call add(maker.args, '-draftmode')
+	endif
+	return maker
+endfunction
+call neomake#config#set('ft.tex.InitForJob', function('PdfLatexExe'))
 call neomake#configure#automake('wn')
 
 let g:neomake_tex_enabled_makers = ['chktex', 'pdflatex']
