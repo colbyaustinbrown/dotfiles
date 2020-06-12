@@ -1,0 +1,1 @@
+When started as a service via systemd, configuration is read from /etc/mopidy/mopidy.conf. A symlink has been created pointing to this config file, to keep it in line with the rest of the dotfiles synced with git.
