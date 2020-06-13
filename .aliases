@@ -4,3 +4,5 @@ alias shutdown='sudo shutdown'
 alias reboot='sudo reboot'
 alias cat-hist="cat ~/.zsh-hist-eternal | sed 's/: [0-9:]\+;//'"
 alias chktex="chktex -g -l ~/.config/chktexrc"
+alias nnn="nnn -c"
+

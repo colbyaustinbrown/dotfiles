@@ -47,6 +47,10 @@ else
 	source /usr/share/fzf/key-bindings.zsh
 	source /usr/share/fzf/completion.zsh
 
+	# nnn
+	export NNN_OPENER="${HOME}/.config/nnn/plugins/nuke"
+	export NNN_PLUG="c:fzcd;o:fzopen"
+
 	# gpg
 	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 	gpgconf --launch gpg-agent
