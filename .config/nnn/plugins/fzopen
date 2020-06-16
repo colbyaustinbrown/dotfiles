@@ -29,5 +29,6 @@ case "$(file -biL "$entry")" in
     *text*)
         "${VISUAL:-$EDITOR}" "$entry" ;;
     *)
-        xdg-open "$entry" >/dev/null 2>&1 ;;
+        # xdg-open "$entry" >/dev/null 2>&1 ;;
+	${HOME}/.config/nnn/plugins/nuke "$entry" ;;
 esac

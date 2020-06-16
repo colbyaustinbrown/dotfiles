@@ -49,7 +49,7 @@ else
 
 	# nnn
 	export NNN_OPENER="${HOME}/.config/nnn/plugins/nuke"
-	export NNN_PLUG="c:fzcd;o:fzopen"
+	export NNN_PLUG="o:fzopen"
 
 	# gpg
 	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
