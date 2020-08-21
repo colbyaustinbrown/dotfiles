@@ -194,4 +194,5 @@ smart_gaps on
 exec picom &
 exec feh --bg-scale ~/dotfiles/wallpaper.png
 exec polybar top
+exec polybar external-dp2
 
