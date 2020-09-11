@@ -33,15 +33,16 @@ colorscheme pink-moon
 " Plugins
 call plug#begin('~/.config/nvim/plugs')
 Plug 'colbyaustinbrown/neomake'
+Plug 'kshenoy/vim-signature'
 call plug#end()
 
 " Latex configuration
-let g:tex_flavor = "latex"
-let g:neomake_tex_chktex_maker = {
-	\ 'exe': 'chktex',
-	\ 'args': ['-q', '-v0', '-g', '-l', expand('~/.config/chktexrc')],
-	\ 'errorformat': '%f:%l:%c:%n:%m'
-	\}
+" let g:tex_flavor = "latex"
+" let g:neomake_tex_chktex_maker = {
+"	\ 'exe': 'chktex',
+"	\ 'args': ['-q', '-v0', '-g', '-l', expand('~/.config/chktexrc')],
+"	\ 'errorformat': '%f:%l:%c:%n:%m'
+"	\}
 
 let g:neomake_tex_pdflatex_maker = {
 	\ 'exe': 'pdflatex',
@@ -61,5 +62,6 @@ endfunction
 call neomake#config#set('ft.tex.InitForJob', function('PdfLatexExe'))
 call neomake#configure#automake('wn')
 
-let g:neomake_tex_enabled_makers = ['chktex', 'pdflatex']
+" let g:neomake_tex_enabled_makers = ['chktex', 'pdflatex']
+let g:neomake_tex_enabled_makers = ['pdflatex']
 
