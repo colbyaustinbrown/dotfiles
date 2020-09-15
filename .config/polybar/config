@@ -23,7 +23,7 @@ gray = #6e7b87
 ;color15		#5673BE
 
 [bar/top]
-monitor=eDP-1
+monitor=DP-2
 width = 100%
 height = 30
 background = #00000000
@@ -34,8 +34,19 @@ line-size = 2
 modules-left = i3
 modules-right = pulseaudio backlight battery date
 
-[bar/external-dp2]
-monitor=DP-2
+[bar/external-dp4]
+monitor=DP-4
+width = 100%
+height = 30
+background = #00000000
+font-0 = "JetBrains Mono NL"
+font-1 = "Symbols Nerd Font"
+line-size = 2
+
+modules-left = i3
+
+[bar/external-hdmi0]
+monitor=HDMI-0
 width = 100%
 height = 30
 background = #00000000
