@@ -205,3 +205,6 @@ exec polybar top
 exec polybar external-dp4
 exec polybar external-hdmi0
 
+for_window [class="KeePassXC"] move scratchpad
+exec keepassxc
+
