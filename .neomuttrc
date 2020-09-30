@@ -24,7 +24,7 @@ set imap_pass = "`gpg -dq ~/.neomutt/colbyabrown@math.ucdavis.edu.gpg`"
 # set imap_pass = "jyfniaintnpwmgcw"
 
 set folder = imaps://mail.math.ucdavis.edu/
-mailboxes =Inbox =Todo =Trash =Archive
+mailboxes =Inbox =Todo =Trash =Archive =Zoom
 set spoolfile = "+INBOX"
 set record = +Sent
 set postponed = "+[Gmail].Drafts"
