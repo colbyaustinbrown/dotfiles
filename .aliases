@@ -1,4 +1,4 @@
-alias vim='nvim'
+alias vim=nvim
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles.git --work-tree=$HOME'
 alias shutdown='sudo shutdown'
 alias reboot='sudo reboot'
