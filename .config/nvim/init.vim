@@ -1,6 +1,11 @@
 syntax on
 filetype plugin indent on
 
+" Turn on persistent undo for only tex files
+let whitelist = ['tex']
+set undofile
+autocmd BufWritePre * if index(whitelist, &ft) < 0 | set noundofile
+
 " Obliterate arrow keys!
 noremap <Up> <Nop>
 noremap <Down> <Nop>
@@ -25,6 +30,10 @@ noremap <silent> <expr> k (v:count == 0 ? 'gk' : 'k')
 
 nnoremap <esc> :noh<return><esc>
 
+" tab expansion
+set tabstop=4
+set expandtab
+
 " Add some colors
 set termguicolors
 set background=dark
@@ -34,7 +43,22 @@ colorscheme pink-moon
 call plug#begin('~/.config/nvim/plugs')
 Plug 'colbyaustinbrown/neomake'
 Plug 'kshenoy/vim-signature'
+Plug 'lervag/vimtex'
+Plug 'SirVer/ultisnips'
 call plug#end()
+
+" Vimtex configuration
+let g:tex_flavor = 'latex'
+let g:vimtex_fold_enabled = 1
+let g:vimtex_fold_types = {
+        \ 'envs' : {
+        \   'enabled': 0
+        \ }
+        \}
+let g:vimtex_view_method = 'zathura'
+if empty(v:servername) && exists('*remote_startserver')
+    call remote_startserver('VIM')
+endif
 
 " Latex configuration
 " let g:tex_flavor = "latex"
