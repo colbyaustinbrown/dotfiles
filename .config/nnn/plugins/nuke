@@ -242,6 +242,12 @@ handle_extension() {
                 exit 0
             fi
             ;;
+
+        ## TEX
+        tex|cls)
+            "$EDITOR" "${FPATH}"
+            exit 0;;
+            
     esac
 }
 
