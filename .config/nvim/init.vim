@@ -35,11 +35,6 @@ nnoremap <esc> :noh<return><esc>
 set tabstop=4
 set expandtab
 
-" Add some colors
-set termguicolors
-set background=dark
-colorscheme pink-moon
-
 " Shift + J/K moves selected lines down/up in zinual mode
 vnoremap J :m '>+1<CR>gv=gv
 vnoremap K :m '<-2<CR>gv=gv
@@ -49,6 +44,7 @@ call plug#begin('~/.config/nvim/plugs')
 Plug 'colbyaustinbrown/neomake'
 Plug 'kshenoy/vim-signature'
 Plug 'lervag/vimtex'
+Plug 'sts10/vim-pink-moon'
 " Plug 'SirVer/ultisnips'
 " Plug 'neoclide/coc.nvim'
 call plug#end()
@@ -103,4 +99,9 @@ let g:neomake_tex_enabled_makers = ['pdflatex']
 
 " coc configuration
 inoremap <expr> <c-space> pumvisible() ? "\<C-n>" : "\<Tab>"
+
+" Add some colors
+set termguicolors
+set background=dark
+colorscheme pink-moon
 
