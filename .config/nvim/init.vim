@@ -53,9 +53,11 @@ call plug#end()
 let g:tex_flavor = 'latex'
 let g:vimtex_fold_enabled = 1
 let g:vimtex_fold_types = {
-        \ 'envs' : {
-        \   'enabled': 0
+        \ 'comments': {'enabled': 1}
+        \ , 'envs': {
+        \   'whitelist': ['frame', 'tikzpicture']
         \ }
+        \ , 'items': {'enabled': 0}
         \}
 let g:vimtex_view_method = 'zathura'
 if empty(v:servername) && exists('*remote_startserver')
@@ -95,7 +97,7 @@ call neomake#config#set('ft.tex.InitForJob', function('PdfLatexExe'))
 call neomake#configure#automake('wn')
 
 " let g:neomake_tex_enabled_makers = ['chktex', 'pdflatex']
-let g:neomake_tex_enabled_makers = ['pdflatex']
+let g:neomake_tex_enabled_makers = ['pdflatex', 'bibtex']
 
 " coc configuration
 inoremap <expr> <c-space> pumvisible() ? "\<C-n>" : "\<Tab>"
