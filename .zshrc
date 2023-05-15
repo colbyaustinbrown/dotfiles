@@ -54,5 +54,8 @@ else
 	# gpg
 	export SSH_AUTH_SOCK=$(gpgconf --list-dirs agent-ssh-socket)
 	gpgconf --launch gpg-agent
+
+    export PATH=$PATH:~/.ghcup/bin
+    export PATH=/usr/local/texlive/2023/bin/x86_64-linux:$PATH
 fi
 
